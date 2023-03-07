@@ -42,13 +42,12 @@ class DetailFragment : Fragment() {
         return inflater.inflate(R.layout.fragments_school_detail, container, false)
     }
 
-    /**
-     * Given more time, I would like to handle this
-     * for versions below 33.
-     */
-    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val school = arguments?.getParcelable(KEY, School::class.java)
+        val school = if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            arguments?.getParcelable(KEY)
+        } else {
+            arguments?.getParcelable(KEY, School::class.java)
+        }
         school?.let {
             viewModel.getSatScores(it)
         }
