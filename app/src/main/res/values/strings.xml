@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="click_to_see">Click to see details.</string>
+    <string name="something_wrong">Uh-oh! Something went wrong.</string>
+    <string name="error_img">Error Image.</string>
+    <string name="math">Avg. Math scores</string>
+    <string name="reading">Avg. Reading scores</string>
+    <string name="writing">Avg.Writing scores</string>
+    <string name="scores">Avg. Scores</string>
+    <string name="avg_scores">Avg. SAT results:</string>
+    <string name="no_email">No email available.</string>
+    <string name="location">%1$s</string>
+    <string name="sports">%1$s</string>
+    <string name="extra_curr_activities">%1$s</string>
+    <string name="website">%1$s</string>
+    <string name="num_of_test_takers">No. of test takers</string>
+    <string name="overview">Overview:</string>
+    <string name="extra_curr_activities_title">Extra-curricular Activities:</string>
+</resources>
